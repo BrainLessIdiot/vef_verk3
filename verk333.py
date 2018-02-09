@@ -33,4 +33,4 @@ def send_image(filename):
     return static_file(filename, root='./static_file')
 
 
-run(host="localhost", port=8080)
+run(host='0.0.0.0', port=os.environ.get('PORT'))
